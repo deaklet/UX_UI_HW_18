@@ -3,14 +3,14 @@
     vertical-align: top;
   }
 
-.logo {
-  width: 23%;
+.logo{
+  width: 12%;
   padding: 1%;
   text-align: top;
 }
 
 nav{
-  width: 73%;
+  width: 82%;
   padding: 1%;
   background-color: pink;
 }
@@ -54,4 +54,45 @@ footer li{
   margin: 30px;
   color: white;
   vertical-align: top;
+}
+
+.flexContainer{
+  display: flex;
+}
+.flexchid {
+  width: 33%;
+  margin: 0 10px;
+  padding: 5px 10px;
+}
+
+.workGrid{
+  display: grid;
+  grid-template-rows: none;
+  grid-template-columns: none;
+  grid-template-areas: 
+  "pro1"
+  "pro2"
+  "pro3"
+  ;
+}
+
+.project{
+  width: 100%;
+  background-image: url(/images/colors.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  color: pink;
+}
+
+@media only screen and (max-width: 600){
+  .workGrid{
+    display: grid;
+    grid-template-rows: none;
+    grid-template-columns: none;
+    grid-template-areas: 
+    "pro1"
+    "pro2"
+    "pro3"
+    ;
+  }
 }
