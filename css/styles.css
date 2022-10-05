@@ -57,7 +57,9 @@ footer li{
 }
 
 .flexContainer{
-  display: flex;
+  display: flex; 
+  justify-content: center;
+
 }
 .flexchid {
   width: 33%;
@@ -65,34 +67,48 @@ footer li{
   padding: 5px 10px;
 }
 
+.flexContainer p{
+  text-align: left;
+  padding: 10px;
+  width: 300px;
+  font-family: Arial, Helvetica, sans-serif
+}
+.flexContainer h3{
+  text-align: center;
+}
+.aboutMe h2{
+  text-align: center;
+}
+
 .workGrid{
   display: grid;
-  grid-template-rows: none;
-  grid-template-columns: none;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: 
-  "pro1"
-  "pro2"
-  "pro3"
+  "pro1img project1"
+  "pro2img project2"
+  "pro3img project3"
   ;
 }
 
-.project{
+.Projects{
   width: 100%;
-  background-image: url(/images/colors.png);
-  background-repeat: no-repeat;
+  padding: 30px;
   text-align: center;
-  color: pink;
 }
 
 @media only screen and (max-width: 600){
   .workGrid{
     display: grid;
-    grid-template-rows: none;
-    grid-template-columns: none;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas: 
-    "pro1"
-    "pro2"
-    "pro3"
+    "pro1img"
+    "project1"
+    "pro2img"
+    "project2"
+    "pro3img"
+    "project3"
     ;
   }
 }
